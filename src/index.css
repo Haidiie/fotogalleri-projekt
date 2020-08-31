@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 :root{
-  --primary: #d42013;
-  --secondary: #4e4e4e;
+  --primary: #ffffff;
+  --secondary: #ffffff;
   --error: #ff4a4a;
 }
 
@@ -11,7 +11,7 @@
 body{
   font-family: "Noto Serif";
   color: var(--secondary);
-  background-color: #a3bdc7;
+  background-color: #0c0629;
 }
 
 .App{
@@ -72,5 +72,27 @@ label:hover{
   height: 2px;
   background: var(--primary);
   margin-top: 20px;
+}
+
+.img-grid{
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.img-wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+}
+.img-wrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
