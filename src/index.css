@@ -35,3 +35,42 @@ body{
   font-size: 2.6rem;
 }
 
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+label{
+  display: block;
+  width: 50px;
+  height: 30px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 7px;
+}
+label:hover{
+  background: var(--primary);
+  color: white;
+}
+.output{
+  height: 60px;
+  font-size: 0.8rem;
+}
+.error{
+  color: var(--error);
+}
+
+.progress-bar{
+  height: 2px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+
